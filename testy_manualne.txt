@@ -1,0 +1,251 @@
+Przedstawiony poniżej scenariusz testów manualnych należy interpretować w następujący sposób:
+	Txx - Test numer xx.
+	Axx - Akcja numer xx.
+	Oxx - Oczekiwania wobec akcji numer xx.
+
+T01 - Sprawdź jakie restauracje obsługujemy.
+	A01. Kliknij w napis "Restauracje".
+	O01. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A02. Kliknij logo aplikacji.
+	O02. Zostanie wyświetlona strona główna.
+T02 - Dowiedz się więcej o nas.
+	A01. Kliknij w napis "O nas".
+	O01. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A02. Kliknij logo aplikacji.
+	O02. Zostanie wyświetlona strona główna.
+T03 - Wyświetl stronę główną.
+	A01. Kliknij logo aplikacji.
+	O01. Zostanie wyświetlona strona główna.
+T04 - Wyszukaj restaurację.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij logo aplikacji.
+	O02. Zostanie wyświetlona strona główna.
+T05 - Sprawdź menu wybranej restauracji.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij logo aplikacji.
+	O03. Zostanie wyświetlona strona główna.
+T06 - Losuj jedzenie z restauracji X.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij produkty, którymi jesteś zainteresowany.
+	O03. Produkty zostaną zaznaczone, co zostanie pokazane przez ich podświetlenie.
+	A04. Kliknij przycisk losuj.
+	O04. Zostanie wyświetlone danie wylosowane z listy produktów, które zaznaczyliśmy.
+	A05. Kliknij logo aplikacji.
+	O05. Zostanie wyświetlona strona główna.
+T07 - Sprawdź poprawność działania filtrowania po kategorii [pełna lista menu w tym teście, uwzględnia zmiany listy wprowadzone przez filtrowanie po cenie].
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij w kategorii napis "Burgery".
+	O03. Menu zostanie skrócone do listy złożonej z samych burgerów.
+	A04. Kliknij w kategorii ponownie napis "Burgery".
+	O04. Menu zostanie przywrócone do pełnej listy.
+	A05. Kliknij w kategorii napis "Zestawy".
+	O05. Menu zostanie skrócone do listy złożonej z samych zestawów.
+	A06. Kliknij w kategorii ponownie napis "Zestawy".
+	O06. Menu zostanie przywrócone do pełnej listy.
+	A07. Kliknij w kategorii napis "Napoje".
+	O07. Menu zostanie skrócone do listy złożonej z samych napojów.
+	A08. Kliknij w kategorii ponownie napis "Napoje".
+	O08. Menu zostanie przywrócone do pełnej listy.
+	A09. Kliknij w kategorii napis "Desery".
+	O09. Menu zostanie skrócone do listy złożonej z samych deserów.
+	A10. Kliknij w kategorii ponownie napis "Desery".
+	O10. Menu zostanie przywrócone do pełnej listy.
+	A11. Kliknij w kategorii napis "Inne".
+	O11. Menu zostanie skrócone do listy złożonej z samych produktów sklasyfikowanych jako "inne".
+	A12. Kliknij w kategorii ponownie napis "Inne".
+	O12. Menu zostanie przywrócone do pełnej listy.
+	A13. Kliknij logo aplikacji.
+	O13. Zostanie wyświetlona strona główna.
+T08 - Sprawdź poprawność działania łączonego filtrowania po kategorii [pełna lista menu w tym teście, uwzględnia zmiany listy wprowadzone przez filtrowanie po cenie].
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij w kategorii napis "Burgery" oraz "Zestawy".
+	O03. Menu zostanie skrócone do listy złożonej z samych burgerów i zestawów.
+	A04. Kliknij w kategorii napis "Napoje".
+	O04. Menu zostanie powiększone o ofertę napojów.
+	A05. Kliknij w kategorii napis "Desery".
+	O06. Menu zostanie powiększone o ofertę deserów.
+	A07. Kliknij w kategorii napis "Inne".
+	O07. Menu zostanie przywrócone do pełnej listy.
+	A08. Kliknij w kategorii napis "Inne".
+	O08. Menu zostanie skrócone o produkty sklasyfikowane jako "inne".
+	A09. Kliknij w kategorii napis "Inne".
+	O09. Menu zostanie przywrócone do pełnej listy.
+	A10. Kliknij w kategorii napis "Desery".
+	O10. Menu zostanie skrócone o produkty deserowe.
+	A11. Kliknij w kategorii napis "Desery".
+	O11. Menu zostanie przywrócone do pełnej listy.
+	A12. Kliknij w kategorii napis "Napoje".
+	O12. Menu zostanie skrócone o napoje.
+	A13. Kliknij w kategorii napis "Napoje".
+	O13. Menu zostanie przywrócone do pełnej listy.
+	A14. Kliknij w kategorii napis "Zestawy".
+	O14. Menu zostanie skrócone o zestawy.
+	A15. Kliknij w kategorii napis "Zestawy".
+	O15. Menu zostanie przywrócone do pełnej listy.	
+	A16. Kliknij w kategorii napis "Burgery".
+	O16. Menu zostanie skrócone o burgery.
+	A17. Kliknij w kategorii napis "Burgery".
+	O17. Menu zostanie przywrócone do pełnej listy.	
+	A18. Kliknij logo aplikacji.
+	O18. Zostanie wyświetlona strona główna.	
+T09 - Sprawdź poprawność działania filtrowania po cenie [pełna lista menu w tym teście, uwzględnia zmiany listy wprowadzone przez filtrowanie po kategorii].
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij w filtrowaniu pole z lewej strony pod napisem "Cena" i wpisz minimalną wartość produktów.
+	O03. Menu zostało skrócone do listy produktów, których cena jest wyższa/równa minimalnej wartości.
+	A04. Kliknij w filtrowaniu pole z prawej strony pod napisem "Cena" i wpisz maksymalną wartość produktów.
+	O04. Menu zostało skrócone do listy produktów, których cena jest równa lub niższa od maksymalnej wartości.
+	A05. Kliknij w filtrowaniu pole z lewej strony pod napisem "Cena" i usuń wartość.
+	O05. Menu zostało powiększone o listę produktów, o nieograniczonej dolnej cenie.
+	A06. Kliknij w filtrowaniu pole z prawej strony pod napisem "Cena" i usuń wartość.
+	O06. Menu zostanie przywrócone do pełnej listy.
+	A07. Kliknij logo aplikacji.
+	O07. Zostanie wyświetlona strona główna.	
+T10 - Sprawdź poprawność przechodzenia po podstronach.
+	A01. Kliknij restauracje.
+	O01. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A02. Kliknij w napis "O nas".
+	O02. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A03. Kliknij logo aplikacji.
+	O03. Zostanie wyświetlona strona główna.
+	A04. Kliknij w napis "O nas".
+	O04. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A05. Kliknij w napis "Restauracje".
+	O05. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A06. Kliknij logo aplikacji.
+	O06. Zostanie wyświetlona strona główna.
+	A06. Wpisz nazwę jednej z obsługiwanych restauracji w polu "wpisz nazwę restauracji".
+	O06. Zostanie wyświetlona podpowiedź z nazwą restauracji.
+	A07. Kliknij w wyświetloną podpowiedź.
+	O07. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A08. Kliknij w napis "O nas".
+	O08. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A09. Kliknij logo aplikacji.
+	O09. Zostanie wyświetlona strona główna.
+	A10. Wpisz nazwę jednej z obsługiwanych restauracji w polu "wpisz nazwę restauracji".
+	O10. Zostanie wyświetlona podpowiedź z nazwą restauracji.
+	A11. Kliknij w wyświetloną podpowiedź.
+	O11. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A12. Kliknij w napis "Restauracje".
+	O12. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A13. Kliknij logo aplikacji.
+	O13. Zostanie wyświetlona strona główna.
+	A14. Wpisz nazwę jednej z obsługiwanych restauracji w polu "wpisz nazwę restauracji".
+	O14. Zostanie wyświetlona podpowiedź z nazwą restauracji.
+	A15. Kliknij w wyświetloną podpowiedź.
+	O15. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A16. Kliknij logo aplikacji.
+	O16. Zostanie wyświetlona strona główna.	
+T11 - Sprawdź poprawność czyszczenia filtrów, po opuszczeniu podstrony z menu restauracji.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Zastosuj filtr po kategorii, oraz cenie.
+	O03. Zostanie wyświetlone menu mieszczące się w zakresach filtrowania.
+	A04. Kliknij logo aplikacji.
+	O04. Zostanie wyświetlona strona główna.
+	A05. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O05. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A06. Kliknij w wyświetloną podpowiedź.
+	O06. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zastosowanych wcześniej filtrów.
+	A07. Zastosuj filtr po kategorii, oraz cenie.
+	O07. Zostanie wyświetlone menu mieszczące się w zakresach filtrowania.
+	A08. Kliknij w napis "Restauracje".
+	O08. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A09. Kliknij logo aplikacji.
+	O09. Zostanie wyświetlona strona główna.
+	A10. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O10. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A11. Kliknij w wyświetloną podpowiedź.
+	O11. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zastosowanych wcześniej filtrów.
+	A12. Zastosuj filtr po kategorii, oraz cenie.
+	O12. Zostanie wyświetlone menu mieszczące się w zakresach filtrowania.
+	A13. Kliknij w napis "O nas".
+	O13. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A14. Kliknij logo aplikacji.
+	O14. Zostanie wyświetlona strona główna.
+	A15. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O15. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A16. Kliknij w wyświetloną podpowiedź.
+	O16. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zastosowanych wcześniej filtrów.
+	A17. Kliknij logo aplikacji.
+	O17. Zostanie wyświetlona strona główna.
+T12 - Sprawdź poprawność naliczania produktów na podstronie z menu restauracji.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij produkty, którymi jesteś zainteresowany.
+	O03. Ilość wybranych produktów zwiększy się z każdym klikniętym produktem.
+	A03. Kliknij jeszcze raz produkty, które zostały wybrane, tak aby je odznaczyć.
+	O03. Ilość wybranych produktów zmniejszy się z każdym klikniętym produktem.
+	A05. Kliknij logo aplikacji.
+	O05. Zostanie wyświetlona strona główna.
+T13 - Sprawdź poprawność czyszczenia wybranych produktów, po opuszczeniu podstrony z menu restauracji.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij produkty, którymi jesteś zainteresowany.
+	O03. Produkty zostaną zaznaczone, a ilość wybranych produktów zwiększy się z każdym klikniętym produktem.
+	A04. Kliknij logo aplikacji.
+	O04. Zostanie wyświetlona strona główna.
+	A05. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O05. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A06. Kliknij w wyświetloną podpowiedź.
+	O06. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zaznaczonych wcześniej produktów.
+	A07. Kliknij produkty, którymi jesteś zainteresowany.
+	O07. Produkty zostaną zaznaczone, a ilość wybranych produktów zwiększy się z każdym klikniętym produktem.
+	A08. Kliknij w napis "Restauracje".
+	O08. Zostanie wyświetlona podstrona z obsługiwanymi restauracjami.
+	A09. Kliknij logo aplikacji.
+	O09. Zostanie wyświetlona strona główna.
+	A10. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O10. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A11. Kliknij w wyświetloną podpowiedź.
+	O11. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zaznaczonych wcześniej produktów.
+	A12. Kliknij produkty, którymi jesteś zainteresowany.
+	O12. Produkty zostaną zaznaczone, a ilość wybranych produktów zwiększy się z każdym klikniętym produktem.
+	A13. Kliknij w napis "O nas".
+	O13. Zostanie wyświetlona podstrona z opisem twórców aplikacji.
+	A14. Kliknij logo aplikacji.
+	O14. Zostanie wyświetlona strona główna.
+	A15. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O15. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A16. Kliknij w wyświetloną podpowiedź.
+	O16. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru, bez zaznaczonych wcześniej produktów.
+	A17. Kliknij logo aplikacji.
+	O17. Zostanie wyświetlona strona główna.
+T14 - Sprawdź poprawność usuwania oznaczeń, podczas stosowania filtrów.
+	A01. Wpisz nazwę restauracji w polu "wpisz nazwę restauracji".
+	O01. Jeśli restauracja znajduje się w bazie obsługiwanych restauracji zostanie wyświetlona podpowiedź z nazwą restauracji X. Jeśli restauracji nie ma w bazie, zostanie wyświetlony komunikat "nie znaleziono".
+	A02. Kliknij w wyświetloną podpowiedź.
+	O02. Zostanie wyświetlona podstrona z dostępnymi produktami do wyboru.
+	A03. Kliknij po jednym produkcie z kategorii burger oraz napój.
+	O03. Produkty zostaną zaznaczone.
+	A04. Kliknij napis "Burgery".
+	O05. Zaznaczenie zostanie tylko na burgerze, napój zniknie oraz ilość produktów zmniejszy się.
+	A06. Kliknij napis "Burgery" ponownie.
+	O06. Menu zostanie przywrócone do pełnej listy.
+	A07. Kliknij po jednym produkcie z kategorii burger oraz zestawy.
+	O07. Produkty zostaną zaznaczone.
+	A08. Wprowadź cenę maksymalną, która będzie niższa niż wartość zestawu.
+	O08. Zaznaczenie zostanie tylko na burgerze, zestaw zniknie oraz ilość produktów zmniejszy się.
+	A09. Kliknij logo aplikacji.
+	O09. Zostanie wyświetlona strona główna.
