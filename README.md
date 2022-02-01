@@ -4,6 +4,13 @@
 Celem projektu jest stworzenie aplikacji webowej polegającej na wylosowaniu jednej pozycji z całego menu lub paru wybranych dań danej restauracji. Losowanie będzie można również przeprowadzać wpisując kwotę, którą chcemy przeznaczyć oraz czy chcemy napój również będzie można zaznaczyć jakich składników nie lubimy bądź mamy alergie żeby nie było możliwości wylosowania dania które posiada dane składniki. Aplikacja będzie posiadać w bazie danych parę najpopularniejszych restauracji z możliwością ręcznego dodania menu lokalu którego nie ma w bazie.
 Zaletami używania aplikacji mogą być szybszy wybór zamówienia, pewnego rodzaju zabawa polegająca na testowaniu posiłków, których normalnie byśmy nie zamówili. Dla osób lubiących nutkę hazardu będzie to aplikacja idealna.
 
+## Zespół
+- Mikołaj Kopciowski - Lider
+- Wojciech Bilski - Frontend
+- Bartek Grzywaczewski - Backend
+- Michał Muciek - Tester
+
+
 ## Instalacja
 
 ```sh
