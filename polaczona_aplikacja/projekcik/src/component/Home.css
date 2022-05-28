@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Poppins";
+  color: #fff;
+}
+body {
+    background-color: #222;
+}
+
+.ZalogujButton1 {
+    background-color: #0f0;
+    margin: auto;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.ButtonAligned {
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+
+}
+.Napis {
+    max-width: 600px;
+    margin: 40px auto;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.NapisOnas {
+    max-width: 600px;
+    margin: 40px auto;
+    color: #fff;
+    text-align: left;
+    line-height: 40px;
+    margin-top: 100px;
+}
+
+.reactSelect {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: green;
+    border-radius: 20px;
+}
+.Price {
+    color: white;
+    background-color: #222;
+    border-radius: 12px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+.Formsen {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+.right_aligned {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leave_space {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.leave_space2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.box {
+    padding-top: 50px;
+    width: 300px;
+  border: 2px solid green;
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  background-color: #2A2A2A;
+  
+}
+.box_text_main {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
